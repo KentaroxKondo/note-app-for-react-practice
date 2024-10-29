@@ -1,0 +1,77 @@
+.main {
+    flex-grow: 1;
+}
+
+.main-editor,
+.main-preview {
+    height: 50dvh;
+}
+
+.main-editor {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-editor input,
+textarea {
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 10px;
+
+    &:focus {
+        outline: 2px solid cornflowerblue;
+    }
+}
+
+.main-editor input {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.main-editor textarea {
+    flex-grow: 1;
+    resize: none;
+}
+
+.main-preview {
+    padding-block: 25px;
+    padding-inline: 25px;
+    border-top: solid 1px #ddd;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.05);
+    line-break: anywhere;
+}
+
+.preview-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.markdown-preview {
+    line-height: 2;
+}
+
+.no-active-note {
+    flex-grow: 1;
+    height: 100dvh;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.reactMarkdown ul {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    list-style: disc outside none;
+}
+
+.reactMarkdown ul li {
+    margin-left: 2em;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
