@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     setActiveNote(notes.length ? notes[0].id : false);
-  }, []);
+  }, [notes, setActiveNote]);
 
   const addNote = () => {
     const newNote = {
